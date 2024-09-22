@@ -18,7 +18,7 @@ enum Example
 
 int main()
 {
-    int value = b;
+    int value = b; // right now this value could be changed and then the below if statement wouldn't make sense
 
     if (value == b)
     {
