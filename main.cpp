@@ -12,7 +12,8 @@ int c = 2;
 enum Example
 {
     // If you don't specify a value, the default will be 0 and it will increment up one by one
-    A,
+    // setting A to 5 makes B = 6 and C = 7.
+    A = 5,
     B,
     C
 };
