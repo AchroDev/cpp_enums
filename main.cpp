@@ -11,6 +11,7 @@ int c = 2;
 
 enum Example
 {
+    // If you don't specify a value, the default will be 0 and it will increment up one by one
     A,
     B,
     C
@@ -18,9 +19,9 @@ enum Example
 
 int main()
 {
-    Example value = b; // With the Enum we can use Example instead of int, however the value here must be part of the Enum group.
+    Example value = B; // Now using part of the Enum group and the error goes away.
 
-    if (value == b)
+    if (value == 1)
     {
         // TODO:
     }
