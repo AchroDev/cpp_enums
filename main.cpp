@@ -11,13 +11,20 @@
 
 enum Example
 {
-    A,
-    B,
-    C
+    a,
+    b,
+    c
 };
 
 int main()
 {
+    int value = b;
+
+    if (value == b)
+    {
+        // TODO:
+    }
+
     LOG("Hello World!");
     std::cin.get();
 }
