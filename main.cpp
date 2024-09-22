@@ -9,7 +9,9 @@ int a = 0;
 int b = 1;
 int c = 2;
 
-enum Example
+// You can also specify which type of integer you want the enum to be, by default it is a 32-bit int
+// We can assing something like an unsigned char, which is an 8-bit integer and would take less memory
+enum Example : unsigned char
 {
     // If you don't specify a value, the default will be 0 and it will increment up one by one
     // setting A to 5 makes B = 6 and C = 7.
