@@ -19,26 +19,26 @@ private:
 
     // notice that public is written here again, separating the public methods from the public variables
 public:
-    void SetLevel(int level)
+    void SetLevel(Level level)
     {
         m_LogLevel = level; // sets the member variable with the 'level' int parameter
     }
 
     void Warn(const char *message)
     {
-        if (m_LogLevel >= LogLevelWarning)
+        if (m_LogLevel >= Warning)
             std::cout << "[WARNING]: " << message << std::endl; // defining how the warning message should be displayed
     }
 
     void Error(const char *message)
     {
-        if (m_LogLevel >= LogLevelError)
+        if (m_LogLevel >= Error)
             std::cout << "[ERROR]: " << message << std::endl; // defining how the error message should be displayed
     }
 
     void Info(const char *message)
     {
-        if (m_LogLevel >= LogLevelInfo)
+        if (m_LogLevel >= Info)
             std::cout << "[INFO]: " << message << std::endl; // defining how the information message should be displayed
     }
 };
@@ -46,7 +46,7 @@ public:
 int main()
 {
     Log log;                             // Initiating the log
-    log.SetLevel(log.LogLevelError);     // Setting a warning level for the log messages
+    log.SetLevel(Log::Error);            // Setting a warning level for the log messages
     log.Warn("A Warning!!");             // Example/Test warning message
     log.Error("An Error!!!");            // Example error message
     log.Info("Just some information.."); // Example info message
