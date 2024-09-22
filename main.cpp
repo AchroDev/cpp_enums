@@ -18,7 +18,7 @@ enum Example
 
 int main()
 {
-    int value = b; // right now this value could be changed and then the below if statement wouldn't make sense
+    Example value = b; // With the Enum we can use Example instead of int, however the value here must be part of the Enum group.
 
     if (value == b)
     {
