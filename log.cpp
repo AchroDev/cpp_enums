@@ -4,6 +4,15 @@ class Log
 {
     // separating the variables and methods helps keep the code clean in a class
 public:
+    // using an enum here instead of using the integers
+    enum Level
+    {
+        // The '=0' is not necessary, helps with readability
+        Error = 0,
+        Warning,
+        Info
+    };
+
     const int LogLevelError = 0;   // first level
     const int LogLevelWarning = 1; // second level
     const int LogLevelInfo = 2;    // third level
