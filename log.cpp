@@ -13,10 +13,6 @@ public:
         Info
     };
 
-    const int LogLevelError = 0;   // first level
-    const int LogLevelWarning = 1; // second level
-    const int LogLevelInfo = 2;    // third level
-
     // private member variable to maintain the log level only accessible to the class
 private:
     int m_LogLevel = LogLevelInfo; // declaring the int for the log level is default to printing information
