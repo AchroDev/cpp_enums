@@ -15,7 +15,7 @@ public:
 
     // private member variable to maintain the log level only accessible to the class
 private:
-    int m_LogLevel = LogLevelInfo; // declaring the int for the log level is default to printing information
+    int m_LogLevel = Info; // Right now as an int, the log level can be set to anything.
 
     // notice that public is written here again, separating the public methods from the public variables
 public:
