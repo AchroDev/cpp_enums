@@ -15,7 +15,7 @@ public:
 
     // private member variable to maintain the log level only accessible to the class
 private:
-    Level m_LogLevel = Info; // Right now as an int, the log level can be set to anything.
+    Level m_LogLevel = Info; // Now as the type 'Level' the value is require to be one of the enum values
 
     // notice that public is written here again, separating the public methods from the public variables
 public:
